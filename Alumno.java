@@ -49,13 +49,13 @@ public class Alumno {
      */
     public String getNombreUsuarioGithub() {
         String nombreUsuarioGithub;
-        if (nombre.length() < 3){
+        if (nombre.length() < 3 && numeroMatricula.length() < 4){
             nombreUsuarioGithub = nombre.substring(0) + numeroMatricula.substring(0, 4);
         }
-        else if (numeroMatricula.length() < 4){
+        else if (nombre.length() < 3){
             nombreUsuarioGithub = nombre.substring(0, 3) + numeroMatricula.substring(0);  
         }
-        else if (nombre.length() < 3 && numeroMatricula.length() < 4){
+        else if (numeroMatricula.length() < 4){
             nombreUsuarioGithub = nombre.substring(0) + numeroMatricula.substring(0);
         }
         else {
