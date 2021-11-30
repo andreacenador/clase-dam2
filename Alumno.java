@@ -63,4 +63,10 @@ public class Alumno {
         }
         return nombreUsuarioGithub;
     }
+    
+    public String imprimeDetallesNumerados() {
+        String detalles;
+        detalles = nombre + " (" + numeroMatricula + ") - " + edad + " años";
+        return detalles;
+    }
 }
